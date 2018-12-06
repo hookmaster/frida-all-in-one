@@ -38,7 +38,7 @@ FRIDA的几个特点：
 - 第7章. 二次开发基础
 - 第8章. 二次开发案例
 
-详细目录参考我的github主页，链接是[r0ysue/awesome-frida](https://github.com/r0ysue/awesome-frida)
+详细目录参考我的github主页，链接是[hookmaster/frida-all-in-one](https://github.com/hookmaster/frida-all-in-one)
 
 另外说几个任性的考虑：
 
