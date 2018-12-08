@@ -1,6 +1,6 @@
 # 《Frida操作手册》
 
->by : @hluwa  @r0ysue
+>by : @hluwa  @r0ysue 所有讨论尽在【hook老法师】知识星球：https://t.zsxq.com/MbIm2vR
 
 ## changelog：
 
