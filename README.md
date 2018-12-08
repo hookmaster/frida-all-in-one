@@ -1,6 +1,6 @@
 # 《Frida操作手册》
 
->by : @葫芦娃  @r0ysue
+>by : @hluwa  @r0ysue
 
 ## changelog：
 
