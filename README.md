@@ -8,10 +8,12 @@
 ### [一、似水流年](00前言01.似水流年/似水流年.md)
 ### [二、FRIDA/HOOK频道开设](00前言02.FRIDA-HOOK频道开设/FRIDA-HOOK频道开设.md)
 
-## 第1章. 各种环境安装
+## 第1章. 多平台环境安装
 ### 1.1 FRIDA基本架构
 ### 1.2 Windows/macOS/GNU/Linux
 ### 1.3 Android/iOS
+#### 1.3.1 Android root
+#### 1.3.2 Android frida-server 安装
 ### 1.4 源码编译
 
 ## 第2章. FRIDA工具
