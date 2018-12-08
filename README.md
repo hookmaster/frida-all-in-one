@@ -11,7 +11,7 @@
 ## 第1章. 多平台环境安装
 ### 1.1 FRIDA基本架构
 ### 1.2 Windows/macOS/Linux
-### 1.3 Android/iOS
+### 1.3 [Android/iOS](01.多平台环境安装/1.3\ Android-iOS.md)
 #### 1.3.1 Android root
 #### 1.3.2 Android frida-server 安装
 ### 1.4 源码编译
