@@ -1,4 +1,4 @@
-# 《FRIDA攻防大全》
+# 《Frida操作手册》
 
 >by : @葫芦娃  @r0ysue
 
@@ -10,7 +10,7 @@
 
 ## 第1章. 多平台环境安装
 ### 1.1 FRIDA基本架构
-### 1.2 Windows/macOS/GNU/Linux
+### 1.2 Windows/macOS/Linux
 ### 1.3 Android/iOS
 #### 1.3.1 Android root
 #### 1.3.2 Android frida-server 安装
@@ -56,15 +56,15 @@
 ...
 
 ## 第5章. frida高级应用
-### 5.1 静态分析
+### 5.1 静态分析(r2frida, IDA plugin)
 ### 5.2 动态分析
 ### 5.3 数据提取
 ### 5.4 流程分析
 ### 5.5 接口分析
 ### 5.6 协议分析
 ### 5.7 协议fuzz
-### 5.8 抓包解包
-### 5.9 改包重放
+### 5.8 抓包解包(brida)
+### 5.9 改包重放(brida)
 ### 5.10 加密解密
 ### 5.11 脱壳去保护
 ### 5.12 各种检测bypass
