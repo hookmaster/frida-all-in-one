@@ -14,7 +14,7 @@ PS2：所有讨论尽在【hook老法师】知识星球：https://t.zsxq.com/MbI
 
 ## 前言
 
-### [一、似水流年](00前言01.似水流年/似水流年.md)
+### [一、似水流年](https://bbs.pediy.com/thread-247957-1.htm)
 ### [二、FRIDA/HOOK频道开设](00前言02.FRIDA-HOOK频道开设/FRIDA-HOOK频道开设.md)
 
 ## [第1章. 多平台环境安装](01.多平台环境安装)
