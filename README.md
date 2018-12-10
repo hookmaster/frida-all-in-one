@@ -7,7 +7,7 @@ PS2：所有讨论尽在【hook老法师】知识星球：https://t.zsxq.com/MbI
 
 |date|log|
 |:-:|:-|
-|2018-12-08|完成[`01.多平台环境安装/1.3.Android-iOS.md`](01.多平台环境安装/1.3.Android-iOS.md)文章中的安卓部分|
+|2018-12-08|完成[`01.多平台环境安装/1.3.Android-iOS.md`](01.多平台环境安装/1.3.Android-iOS.md)文章中的安卓部分，安卓版本为`8.1`|
 |2018-12-06|完成目录，并上传到github|
 |2018-12-05|前言02：FRIDA-HOOK频道开设|
 |2018-11-24|前言01：似水流年|
@@ -20,7 +20,7 @@ PS2：所有讨论尽在【hook老法师】知识星球：https://t.zsxq.com/MbI
 ## [第1章. 多平台环境安装](01.多平台环境安装)
 ### 1.1 FRIDA基本架构
 ### 1.2 Windows/macOS/Linux
-### 1.3 [Android/iOS](01.多平台环境安装/1.3.Android-iOS.md)
+### 1.3 [Android/iOS](https://bbs.pediy.com/thread-248293.htm)（安卓8.1）
 #### 1.3.1 Android root
 #### 1.3.2 Android frida-server 安装
 ### 1.4 源码编译
