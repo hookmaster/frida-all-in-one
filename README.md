@@ -1,6 +1,6 @@
 # 《Frida操作手册》
 
->PS1：by : @hluwa  @r0ysue <br/>
+>PS1：by : [@hluwa](https://github.com/hluwa)  [@r0ysue](https://github.com/r0ysue) <br/>
 PS2：所有讨论尽在【hook老法师】知识星球：https://t.zsxq.com/MbIm2vR
 
 ## changelog：
