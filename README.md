@@ -3,7 +3,7 @@
 >PS1：by : [@hluwa](https://github.com/hluwa)  [@r0ysue](https://github.com/r0ysue) <br/>
 PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法师】知识星球：https://t.zsxq.com/MbIm2vR
 
-![](tmp/xiaomiquan-logo.png)
+![](tmp/xiaomiquan-logo1.png)
 
 ## changelog：
 
