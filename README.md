@@ -1,12 +1,15 @@
 # 《Frida操作手册》
 
 >PS1：by : [@hluwa](https://github.com/hluwa)  [@r0ysue](https://github.com/r0ysue) <br/>
-PS2：所有讨论尽在【hook老法师】知识星球：https://t.zsxq.com/MbIm2vR
+PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法师】知识星球：https://t.zsxq.com/MbIm2vR
+
+![](tmp/xiaomiquan-logo.png)
 
 ## changelog：
 
 |date|log|
 |:-:|:-|
+|2018-12-11|完成[`03.基本案例上手/3.5 Android`](https://www.freebuf.com/articles/system/190565.html)部分，讲解了`FRIDA`的hook参数、修改结果、远程调用、动态修改等功能|
 |2018-12-08|完成[`01.多平台环境安装/1.3.Android-iOS.md`](https://bbs.pediy.com/thread-248293.htm)文章中的安卓部分，安卓版本为`8.1`|
 |2018-12-06|完成目录，并上传到github|
 |2018-12-05|前言02：FRIDA-HOOK频道开设|
@@ -38,7 +41,7 @@ PS2：所有讨论尽在【hook老法师】知识星球：https://t.zsxq.com/MbI
 ### 3.2 macOS
 ### 3.3 Linux
 ### 3.4 iOS
-### 3.5 Android
+### 3.5 [Android](https://www.freebuf.com/articles/system/190565.html)
 #### 3.5.1 基本能力：hook参数、修改结果
 #### 3.5.2 中级能力：远程调用RPC
 #### 3.5.2 高级能力：互联互通、动态修改
