@@ -23,15 +23,15 @@
 在介绍漏洞原理之前，先来了解一下VMWare中宿主机(host)与虚拟机(guest)之间的通信机制，其中的一种方式叫做Backdoor，利用windows的特权指令in，该指令在正常的host环境用户态中执行会报异常，而在guest中正是利用该异常被host的hypervisor捕获，来实现通信。
 如下图，在vmtools.dll中的Message_Send函数调用Backdoor函数，Backdoor调用in eax,dx来实现通信。
 
-![](.\rpc1.png)
+![](rpc1.png)
 
-![](.\rpc2.png)
+![](rpc2.png)
 
 guest中利用frida框架注入到vmtools.exe中使用RpcChannel_SendOneRaw发送消息
 
-![](.\rpc3.png)
+![](rpc3.png)
 
-![](.\rpc4.png)
+![](rpc4.png)
 
 ```
 gboolean
@@ -241,7 +241,7 @@ packet 2 {
 
 第2节看完open-vm-tools中漏洞溢出的地方，现在来看vmware-vmx.exe中怎么利用漏洞实现逃逸。
 
-![](.\vmware-vmx1.png)
+![](vmware-vmx1.png)
 bind_function会把RPCI通信的命令和函数绑定到一个函数指针数组里面。
 bind_function第3个参数是命令的名字，第4个参数是对应处理的回调函数。
 回调函数的定义如下：
@@ -259,14 +259,14 @@ vmx.capability.copypaste_version		//查询cp的版本
 
 讲完host如何接收guest的命令后，来看看guest的堆溢出怎么触发host的逃逸
 
-![](.\vmware-vmx2.png)
+![](vmware-vmx2.png)
 在处理guest的"tools.capability.dnd_version 3"命令时，设置当前的dnd_version
-![](.\vmware-vmx3.png)
+![](vmware-vmx3.png)
 在处理guest的"vmx.capability.dnd_version"命令时，会获取当前的dnd_version，并且更新dnd/cp全局对象
-![](.\vmware-vmx4.png)
+![](vmware-vmx4.png)
 在Update_DndCP_Object函数中delete掉前一个版本的obj_CP和obj_Dnd， 析构对象的时候都会调用到他们各自的虚函数，只需要溢出到虚表上就能执行漏洞代码。
-![](.\vmware-vmx5.png)
-![](.\vmware-vmx6.png)
+![](vmware-vmx5.png)
+![](vmware-vmx6.png)
 能够执行代码的路径很多，可以溢出Dnd，也可以溢出CP, 只需要选择溢出其中一个虚函数。
 
 #### 0x04 绕过ASLR
@@ -275,27 +275,27 @@ vmx.capability.copypaste_version		//查询cp的版本
 info-set guestinfo.KEY VALUE  //设置key/value键值对
 info-get guestinfo.KEY  		//获取key的值
 ```
-![](.\aslr1.png)
-![](.\aslr3.png)
+![](aslr1.png)
+![](aslr3.png)
 利用info-set覆盖字符串的结尾NULL字符，让value字符串与后面的内存块连接起来，然后在info-get中读取Key，就能获取到value字符串后面的内存，达到信息泄漏。
 
 #### 0x05 Exploit分析
 此次分析的exp是由unamer发布在github上的[vmware_escape](https://github.com/unamer/vmware_escape)项目。
 
 *** 1. 设置DnD/CP版本***
-![](.\exp1.png)
+![](exp1.png)
 
 *** 2. 绕过ASLR***
 多次发送info-set, info-get，进行堆溢出
-![](.\exp2.png)
-![](.\exp3.png)
-![](.\exp4.png)
-![](.\exp5.png)
+![](exp2.png)
+![](exp3.png)
+![](exp4.png)
+![](exp5.png)
 
 获取泄漏的信息，绕过ASLR
-![](.\exp6.png)
+![](exp6.png)
 
 *** 3. 实现代码执行 ***
 通过泄漏的信息，判断是指针是Dnd对象还是CP对象，然后设置不同的rop
-![](.\exp7.png)
-![](.\exp8.png)
+![](exp7.png)
+![](exp8.png)
