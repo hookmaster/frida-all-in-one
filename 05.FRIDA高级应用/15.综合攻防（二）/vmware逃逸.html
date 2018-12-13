@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>vmware逃逸.html</title>
+  <meta name="generator" content="Haroopad 0.13.1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>div.oembedall-githubrepos{border:1px solid #DDD;border-radius:4px;list-style-type:none;margin:0 0 10px;padding:8px 10px 0;font:13.34px/1.4 helvetica,arial,freesans,clean,sans-serif;width:452px;background-color:#fff}div.oembedall-githubrepos .oembedall-body{background:-moz-linear-gradient(center top,#FAFAFA,#EFEFEF);background:-webkit-gradient(linear,left top,left bottom,from(#FAFAFA),to(#EFEFEF));border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-top:1px solid #EEE;margin-left:-10px;margin-top:8px;padding:5px 10px;width:100%}div.oembedall-githubrepos h3{font-size:14px;margin:0;padding-left:18px;white-space:nowrap}div.oembedall-githubrepos p.oembedall-description{color:#444;font-size:12px;margin:0 0 3px}div.oembedall-githubrepos p.oembedall-updated-at{color:#888;font-size:11px;margin:0}div.oembedall-githubrepos ul.oembedall-repo-stats{border:none;float:right;font-size:11px;font-weight:700;padding-left:15px;position:relative;z-index:5;margin:0}div.oembedall-githubrepos ul.oembedall-repo-stats li{border:none;color:#666;display:inline-block;list-style-type:none;margin:0!important}div.oembedall-githubrepos ul.oembedall-repo-stats li a{background-color:transparent;border:none;color:#666!important;background-position:5px -2px;background-repeat:no-repeat;border-left:1px solid #DDD;display:inline-block;height:21px;line-height:21px;padding:0 5px 0 23px}div.oembedall-githubrepos ul.oembedall-repo-stats li:first-child a{border-left:medium none;margin-right:-3px}div.oembedall-githubrepos ul.oembedall-repo-stats li a:hover{background:5px -27px no-repeat #4183C4;color:#FFF!important;text-decoration:none}div.oembedall-githubrepos ul.oembedall-repo-stats li:first-child a:hover{border-bottom-left-radius:3px;border-top-left-radius:3px}ul.oembedall-repo-stats li:last-child a:hover{border-bottom-right-radius:3px;border-top-right-radius:3px}span.oembedall-closehide{background-color:#aaa;border-radius:2px;cursor:pointer;margin-right:3px}div.oembedall-container{margin-top:5px;text-align:left}.oembedall-ljuser{font-weight:700}.oembedall-ljuser img{vertical-align:bottom;border:0;padding-right:1px}.oembedall-stoqembed{border-bottom:1px dotted #999;float:left;overflow:hidden;width:730px;line-height:1;background:#FFF;color:#000;font-family:Arial,Liberation Sans,DejaVu Sans,sans-serif;font-size:80%;text-align:left;margin:0;padding:0}.oembedall-stoqembed a{color:#07C;text-decoration:none;margin:0;padding:0}.oembedall-stoqembed a:hover{text-decoration:underline}.oembedall-stoqembed a:visited{color:#4A6B82}.oembedall-stoqembed h3{font-family:Trebuchet MS,Liberation Sans,DejaVu Sans,sans-serif;font-size:130%;font-weight:700;margin:0;padding:0}.oembedall-stoqembed .oembedall-reputation-score{color:#444;font-size:120%;font-weight:700;margin-right:2px}.oembedall-stoqembed .oembedall-user-info{height:35px;width:185px}.oembedall-stoqembed .oembedall-user-info .oembedall-user-gravatar32{float:left;height:32px;width:32px}.oembedall-stoqembed .oembedall-user-info .oembedall-user-details{float:left;margin-left:5px;overflow:hidden;white-space:nowrap;width:145px}.oembedall-stoqembed .oembedall-question-hyperlink{font-weight:700}.oembedall-stoqembed .oembedall-stats{background:#EEE;margin:0 0 0 7px;padding:4px 7px 6px;width:58px}.oembedall-stoqembed .oembedall-statscontainer{float:left;margin-right:8px;width:86px}.oembedall-stoqembed .oembedall-votes{color:#555;padding:0 0 7px;text-align:center}.oembedall-stoqembed .oembedall-vote-count-post{font-size:240%;color:#808185;display:block;font-weight:700}.oembedall-stoqembed .oembedall-views{color:#999;padding-top:4px;text-align:center}.oembedall-stoqembed .oembedall-status{margin-top:-3px;padding:4px 0;text-align:center;background:#75845C;color:#FFF}.oembedall-stoqembed .oembedall-status strong{color:#FFF;display:block;font-size:140%}.oembedall-stoqembed .oembedall-summary{float:left;width:635px}.oembedall-stoqembed .oembedall-excerpt{line-height:1.2;margin:0;padding:0 0 5px}.oembedall-stoqembed .oembedall-tags{float:left;line-height:18px}.oembedall-stoqembed .oembedall-tags a:hover{text-decoration:none}.oembedall-stoqembed .oembedall-post-tag{background-color:#E0EAF1;border-bottom:1px solid #3E6D8E;border-right:1px solid #7F9FB6;color:#3E6D8E;font-size:90%;line-height:2.4;margin:2px 2px 2px 0;padding:3px 4px;text-decoration:none;white-space:nowrap}.oembedall-stoqembed .oembedall-post-tag:hover{background-color:#3E6D8E;border-bottom:1px solid #37607D;border-right:1px solid #37607D;color:#E0EAF1}.oembedall-stoqembed .oembedall-fr{float:right}.oembedall-stoqembed .oembedall-statsarrow{background-image:url(http://cdn.sstatic.net/stackoverflow/img/sprites.png?v=3);background-repeat:no-repeat;overflow:hidden;background-position:0 -435px;float:right;height:13px;margin-top:12px;width:7px}.oembedall-facebook1{border:1px solid #1A3C6C;padding:0;font:13.34px/1.4 verdana;width:500px}.oembedall-facebook2{background-color:#627add}.oembedall-facebook2 a{color:#e8e8e8;text-decoration:none}.oembedall-facebookBody{background-color:#fff;vertical-align:top;padding:5px}.oembedall-facebookBody .contents{display:inline-block;width:100%}.oembedall-facebookBody div img{float:left;margin-right:5px}div.oembedall-lanyard{-webkit-box-shadow:none;-webkit-transition-delay:0s;-webkit-transition-duration:.4000000059604645s;-webkit-transition-property:width;-webkit-transition-timing-function:cubic-bezier(0.42,0,.58,1);background-attachment:scroll;background-clip:border-box;background-color:transparent;background-image:none;background-origin:padding-box;border-width:0;box-shadow:none;color:#112644;display:block;float:left;font-family:'Trebuchet MS',Trebuchet,sans-serif;font-size:16px;height:253px;line-height:19px;margin:0;max-width:none;min-height:0;outline:#112644 0;overflow-x:visible;overflow-y:visible;padding:0;position:relative;text-align:left;vertical-align:baseline;width:804px}div.oembedall-lanyard .tagline{font-size:1.5em}div.oembedall-lanyard .wrapper{overflow:hidden;clear:both}div.oembedall-lanyard .split{float:left;display:inline}div.oembedall-lanyard .prominent-place .flag:active,div.oembedall-lanyard .prominent-place .flag:focus,div.oembedall-lanyard .prominent-place .flag:hover,div.oembedall-lanyard .prominent-place .flag:link,div.oembedall-lanyard .prominent-place .flag:visited{float:left;display:block;width:48px;height:48px;position:relative;top:-5px;margin-right:10px}div.oembedall-lanyard .place-context{font-size:.889em}div.oembedall-lanyard .prominent-place .sub-place{display:block}div.oembedall-lanyard .prominent-place{font-size:1.125em;line-height:1.1em;font-weight:400}div.oembedall-lanyard .main-date{color:#8CB4E0;font-weight:700;line-height:1.1}div.oembedall-lanyard .first{width:48.57%;margin:0 0 0 2.857%}.mermaid .label{color:#333}.node circle,.node polygon,.node rect{fill:#cde498;stroke:#13540c;stroke-width:1px}.edgePath .path{stroke:green;stroke-width:1.5px}.cluster rect{fill:#cdffb2;rx:40;stroke:#6eaa49;stroke-width:1px}.cluster text{fill:#333}.actor{stroke:#13540c;fill:#cde498}text.actor{fill:#000;stroke:none}.actor-line{stroke:grey}.messageLine0{stroke-width:1.5;stroke-dasharray:"2 2";marker-end:"url(#arrowhead)";stroke:#333}.messageLine1{stroke-width:1.5;stroke-dasharray:"2 2";stroke:#333}#arrowhead{fill:#333}#crosshead path{fill:#333!important;stroke:#333!important}.messageText{fill:#333;stroke:none}.labelBox{stroke:#326932;fill:#cde498}.labelText,.loopText{fill:#000;stroke:none}.loopLine{stroke-width:2;stroke-dasharray:"2 2";marker-end:"url(#arrowhead)";stroke:#326932}.note{stroke:#6eaa49;fill:#fff5ad}.noteText{fill:#000;stroke:none;font-family:'trebuchet ms',verdana,arial;font-size:14px}.section{stroke:none;opacity:.2}.section0,.section2{fill:#6eaa49}.section1,.section3{fill:#fff;opacity:.2}.sectionTitle0,.sectionTitle1,.sectionTitle2,.sectionTitle3{fill:#333}.sectionTitle{text-anchor:start;font-size:11px;text-height:14px}.grid .tick{stroke:lightgrey;opacity:.3;shape-rendering:crispEdges}.grid path{stroke-width:0}.today{fill:none;stroke:red;stroke-width:2px}.task{stroke-width:2}.taskText{text-anchor:middle;font-size:11px}.taskTextOutsideRight{fill:#000;text-anchor:start;font-size:11px}.taskTextOutsideLeft{fill:#000;text-anchor:end;font-size:11px}.taskText0,.taskText1,.taskText2,.taskText3{fill:#fff}.task0,.task1,.task2,.task3{fill:#487e3a;stroke:#13540c}.taskTextOutside0,.taskTextOutside1,.taskTextOutside2,.taskTextOutside3{fill:#000}.active0,.active1,.active2,.active3{fill:#cde498;stroke:#13540c}.activeText0,.activeText1,.activeText2,.activeText3{fill:#000!important}.done0,.done1,.done2,.done3{stroke:grey;fill:lightgrey;stroke-width:2}.doneText0,.doneText1,.doneText2,.doneText3{fill:#000!important}.crit0,.crit1,.crit2,.crit3{stroke:#f88;fill:red;stroke-width:2}.activeCrit0,.activeCrit1,.activeCrit2,.activeCrit3{stroke:#f88;fill:#cde498;stroke-width:2}.doneCrit0,.doneCrit1,.doneCrit2,.doneCrit3{stroke:#f88;fill:lightgrey;stroke-width:2;cursor:pointer;shape-rendering:crispEdges}.activeCritText0,.activeCritText1,.activeCritText2,.activeCritText3,.doneCritText0,.doneCritText1,.doneCritText2,.doneCritText3{fill:#000!important}.titleText{text-anchor:middle;font-size:18px;fill:#000}text{font-family:'trebuchet ms',verdana,arial;font-size:14px}html{height:100%}body{margin:0!important;padding:5px 20px 26px!important;background-color:#fff;font-family:"Lucida Grande","Segoe UI","Apple SD Gothic Neo","Malgun Gothic","Lucida Sans Unicode",Helvetica,Arial,sans-serif;font-size:.9em;overflow-x:hidden;overflow-y:auto}br,h1,h2,h3,h4,h5,h6{clear:both}hr.page{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x;border:0;height:3px;padding:0}hr.underscore{border-top-style:dashed!important}body >:first-child{margin-top:0!important}img.plugin{box-shadow:0 1px 3px rgba(0,0,0,.1);border-radius:3px}iframe{border:0}figure{-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0}kbd{border:1px solid #aaa;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;-moz-box-shadow:1px 2px 2px #ddd;-webkit-box-shadow:1px 2px 2px #ddd;box-shadow:1px 2px 2px #ddd;background-color:#f9f9f9;background-image:-moz-linear-gradient(top,#eee,#f9f9f9,#eee);background-image:-o-linear-gradient(top,#eee,#f9f9f9,#eee);background-image:-webkit-linear-gradient(top,#eee,#f9f9f9,#eee);background-image:linear-gradient(top,#eee,#f9f9f9,#eee);padding:1px 3px;font-family:inherit;font-size:.85em}.oembeded .oembed_photo{display:inline-block}img[data-echo]{margin:25px 0;width:100px;height:100px;background:url(../img/ajax.gif) center center no-repeat #fff}.spinner{display:inline-block;width:10px;height:10px;margin-bottom:-.1em;border:2px solid rgba(0,0,0,.5);border-top-color:transparent;border-radius:100%;-webkit-animation:spin 1s infinite linear;animation:spin 1s infinite linear}.spinner:after{content:'';display:block;width:0;height:0;position:absolute;top:-6px;left:0;border:4px solid transparent;border-bottom-color:rgba(0,0,0,.5);-webkit-transform:rotate(45deg);transform:rotate(45deg)}@-webkit-keyframes spin{to{-webkit-transform:rotate(360deg)}}@keyframes spin{to{transform:rotate(360deg)}}p.toc{margin:0!important}p.toc ul{padding-left:10px}p.toc>ul{padding:10px;margin:0 10px;display:inline-block;border:1px solid #ededed;border-radius:5px}p.toc li,p.toc ul{list-style-type:none}p.toc li{width:100%;padding:0;overflow:hidden}p.toc li a::after{content:"."}p.toc li a:before{content:"• "}p.toc h5{text-transform:uppercase}p.toc .title{float:left;padding-right:3px}p.toc .number{margin:0;float:right;padding-left:3px;background:#fff;display:none}input.task-list-item{margin-left:-1.62em}.markdown{font-family:"Hiragino Sans GB","Microsoft YaHei",STHeiti,SimSun,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",'Segoe UI',AppleSDGothicNeo-Medium,'Malgun Gothic',Verdana,Tahoma,sans-serif;padding:20px}.markdown a{text-decoration:none;vertical-align:baseline}.markdown a:hover{text-decoration:underline}.markdown h1{font-size:2.2em;font-weight:700;margin:1.5em 0 1em}.markdown h2{font-size:1.8em;font-weight:700;margin:1.275em 0 .85em}.markdown h3{font-size:1.6em;font-weight:700;margin:1.125em 0 .75em}.markdown h4{font-size:1.4em;font-weight:700;margin:.99em 0 .66em}.markdown h5{font-size:1.2em;font-weight:700;margin:.855em 0 .57em}.markdown h6{font-size:1em;font-weight:700;margin:.75em 0 .5em}.markdown h1+p,.markdown h1:first-child,.markdown h2+p,.markdown h2:first-child,.markdown h3+p,.markdown h3:first-child,.markdown h4+p,.markdown h4:first-child,.markdown h5+p,.markdown h5:first-child,.markdown h6+p,.markdown h6:first-child{margin-top:0}.markdown hr{border:1px solid #ccc}.markdown p{margin:1em 0;word-wrap:break-word}.markdown ol{list-style-type:decimal}.markdown li{display:list-item;line-height:1.4em}.markdown blockquote{margin:1em 20px}.markdown blockquote>:first-child{margin-top:0}.markdown blockquote>:last-child{margin-bottom:0}.markdown blockquote cite:before{content:'\2014 \00A0'}.markdown .code{border-radius:3px;word-wrap:break-word}.markdown pre{border-radius:3px;word-wrap:break-word;border:1px solid #ccc;overflow:auto;padding:.5em}.markdown pre code{border:0;display:block}.markdown pre>code{font-family:Consolas,Inconsolata,Courier,monospace;font-weight:700;white-space:pre;margin:0}.markdown code{border-radius:3px;word-wrap:break-word;border:1px solid #ccc;padding:0 5px;margin:0 2px}.markdown img{max-width:100%}.markdown mark{color:#000;background-color:#fcf8e3}.markdown table{padding:0;border-collapse:collapse;border-spacing:0;margin-bottom:16px}.markdown table tr td,.markdown table tr th{border:1px solid #ccc;margin:0;padding:6px 13px}.markdown table tr th{font-weight:700}.markdown table tr th>:first-child{margin-top:0}.markdown table tr th>:last-child{margin-bottom:0}.markdown table tr td>:first-child{margin-top:0}.markdown table tr td>:last-child{margin-bottom:0}.solarized-light{padding:20px;color:#737373;font-size:15px;background:#fdf6e3;-webkit-font-smoothing:antialiased}.solarized-light a{color:#1e6ea7}.solarized-light a:hover{color:#268bd2}.solarized-light h1,.solarized-light h2,.solarized-light h3,.solarized-light h4,.solarized-light h5{color:#b58900}.solarized-light h2{border-bottom:1px solid #f6d784;line-height:1.7em}.solarized-light h6{color:#9c7600}.solarized-light hr{border:1px solid #fae7b3}.solarized-light pre>code{font-size:.9em}.solarized-light blockquote{border-left:4px solid #fae7b3;padding:0 15px;font-style:italic}.solarized-light table{background-color:#fdf4dd}.solarized-light table tr td,.solarized-light table tr th{border:1px solid #fae7b3}.solarized-light table tr:nth-child(2n){background-color:#fef8ea}.hljs-comment,.hljs-title{color:#d6baad}.css .hljs-class,.css .hljs-id,.css .hljs-pseudo,.hljs-attribute,.hljs-regexp,.hljs-tag,.hljs-variable,.html .hljs-doctype,.ruby .hljs-constant,.xml .hljs-doctype,.xml .hljs-pi,.xml .hljs-tag .hljs-title{color:#dc3958}.hljs-built_in,.hljs-constant,.hljs-literal,.hljs-number,.hljs-params,.hljs-preprocessor{color:#f79a32}.css .hljs-rules .hljs-attribute,.ruby .hljs-class .hljs-title{color:#f06431}.hljs-header,.hljs-inheritance,.hljs-string,.hljs-value,.ruby .hljs-symbol,.xml .hljs-cdata{color:#889b4a}.css .hljs-hexcolor{color:#088649}.coffeescript .hljs-title,.hljs-function,.javascript .hljs-title,.perl .hljs-sub,.python .hljs-decorator,.python .hljs-title,.ruby .hljs-function .hljs-title,.ruby .hljs-title .hljs-keyword{color:#8ab1b0}.hljs-keyword,.javascript .hljs-function{color:#98676a}.hljs{display:block;overflow-x:auto;background:#221a0f;color:#d3af86;padding:.5em;-webkit-text-size-adjust:none}.coffeescript .javascript,.javascript .xml,.tex .hljs-formula,.xml .css,.xml .hljs-cdata,.xml .javascript,.xml .vbscript{opacity:.5}.MathJax_Hover_Frame{border-radius:.25em;-webkit-border-radius:.25em;-moz-border-radius:.25em;-khtml-border-radius:.25em;box-shadow:0 0 15px #83A;-webkit-box-shadow:0 0 15px #83A;-moz-box-shadow:0 0 15px #83A;-khtml-box-shadow:0 0 15px #83A;border:1px solid #A6D!important;display:inline-block;position:absolute}.MathJax_Hover_Arrow{position:absolute;width:15px;height:11px;cursor:pointer}#MathJax_About{position:fixed;left:50%;width:auto;text-align:center;border:3px outset;padding:1em 2em;background-color:#DDD;color:#000;cursor:default;font-family:message-box;font-size:120%;font-style:normal;text-indent:0;text-transform:none;line-height:normal;letter-spacing:normal;word-spacing:normal;word-wrap:normal;white-space:nowrap;float:none;z-index:201;border-radius:15px;-webkit-border-radius:15px;-moz-border-radius:15px;-khtml-border-radius:15px;box-shadow:0 10px 20px gray;-webkit-box-shadow:0 10px 20px gray;-moz-box-shadow:0 10px 20px gray;-khtml-box-shadow:0 10px 20px gray;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}.MathJax_Menu{position:absolute;background-color:#fff;color:#000;width:auto;padding:2px;border:1px solid #CCC;margin:0;cursor:default;font:menu;text-align:left;text-indent:0;text-transform:none;line-height:normal;letter-spacing:normal;word-spacing:normal;word-wrap:normal;white-space:nowrap;float:none;z-index:201;box-shadow:0 10px 20px gray;-webkit-box-shadow:0 10px 20px gray;-moz-box-shadow:0 10px 20px gray;-khtml-box-shadow:0 10px 20px gray;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}.MathJax_MenuItem{padding:2px 2em;background:0 0}.MathJax_MenuArrow{position:absolute;right:.5em;color:#666}.MathJax_MenuActive .MathJax_MenuArrow{color:#fff}.MathJax_MenuArrow.RTL{left:.5em;right:auto}.MathJax_MenuCheck{position:absolute;left:.7em}.MathJax_MenuCheck.RTL{right:.7em;left:auto}.MathJax_MenuRadioCheck{position:absolute;left:1em}.MathJax_MenuRadioCheck.RTL{right:1em;left:auto}.MathJax_MenuLabel{padding:2px 2em 4px 1.33em;font-style:italic}.MathJax_MenuRule{border-top:1px solid #CCC;margin:4px 1px 0}.MathJax_MenuDisabled{color:GrayText}.MathJax_MenuActive{background-color:Highlight;color:HighlightText}.MathJax_Menu_Close{position:absolute;width:31px;height:31px;top:-15px;left:-15px}#MathJax_Zoom{position:absolute;background-color:#F0F0F0;overflow:auto;display:block;z-index:301;padding:.5em;border:1px solid #000;margin:0;font-weight:400;font-style:normal;text-align:left;text-indent:0;text-transform:none;line-height:normal;letter-spacing:normal;word-spacing:normal;word-wrap:normal;white-space:nowrap;float:none;box-shadow:5px 5px 15px #AAA;-webkit-box-shadow:5px 5px 15px #AAA;-moz-box-shadow:5px 5px 15px #AAA;-khtml-box-shadow:5px 5px 15px #AAA;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}#MathJax_ZoomOverlay{position:absolute;left:0;top:0;z-index:300;display:inline-block;width:100%;height:100%;border:0;padding:0;margin:0;background-color:#fff;opacity:0;filter:alpha(opacity=0)}#MathJax_ZoomFrame{position:relative;display:inline-block;height:0;width:0}#MathJax_ZoomEventTrap{position:absolute;left:0;top:0;z-index:302;display:inline-block;border:0;padding:0;margin:0;background-color:#fff;opacity:0;filter:alpha(opacity=0)}.MathJax_Preview{color:#888}#MathJax_Message{position:fixed;left:1px;bottom:2px;background-color:#E6E6E6;border:1px solid #959595;margin:0;padding:2px 8px;z-index:102;color:#000;font-size:80%;width:auto;white-space:nowrap}#MathJax_MSIE_Frame{position:absolute;top:0;left:0;width:0;z-index:101;border:0;margin:0;padding:0}.MathJax_Error{color:#C00;font-style:italic}footer{position:fixed;font-size:.8em;text-align:right;bottom:0;margin-left:-25px;height:20px;width:100%}</style>
+</head>
+<body class="markdown solarized-light">
+<h2 id="vmware虚拟机逃逸漏洞分析"><a name="vmware虚拟机逃逸漏洞分析" href="#vmware虚拟机逃逸漏洞分析"></a>VMware虚拟机逃逸漏洞分析</h2><h4 id="0x00-漏洞编号"><a name="0x00-漏洞编号" href="#0x00-漏洞编号"></a>0x00 漏洞编号</h4><table>
+<thead>
+<tr>
+<th>修补时间</th>
+<th>编号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2017-03-14</td>
+<td>CVE-2017-4901</td>
+</tr>
+</tbody>
+</table><h4 id="0x01-影响范围"><a name="0x01-影响范围" href="#0x01-影响范围"></a>0x01 影响范围</h4><table>
+<thead>
+<tr>
+<th>产品</th>
+<th>版本</th>
+<th>级别</th>
+<th>修补版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Workstation Pro</td>
+<td>12.x</td>
+<td>严重</td>
+<td>12.5.4</td>
+</tr>
+<tr>
+<td>Fusion Pro<br>Fusion</td>
+<td>8.x</td>
+<td>严重</td>
+<td>8.5.5</td>
+</tr>
+</tbody>
+</table><h4 id="0x02-漏洞简介"><a name="0x02-漏洞简介" href="#0x02-漏洞简介"></a>0x02 漏洞简介</h4><p>在VMware Workstation和Fusion中的拖放（Dnd）和复制粘贴（CP）功能存在堆溢出漏洞，这会让虚拟机客户端在宿主机上执行任意代码。</p><h4 id="0x03-漏洞原理"><a name="0x03-漏洞原理" href="#0x03-漏洞原理"></a>0x03 漏洞原理</h4><p><strong><em> 1. RPCI通信机制 </em></strong></p><p>在介绍漏洞原理之前，先来了解一下VMWare中宿主机(host)与虚拟机(guest)之间的通信机制，其中的一种方式叫做Backdoor，利用windows的特权指令in，该指令在正常的host环境用户态中执行会报异常，而在guest中正是利用该异常被host的hypervisor捕获，来实现通信。<br>如下图，在vmtools.dll中的Message_Send函数调用Backdoor函数，Backdoor调用in eax,dx来实现通信。</p><p><img src="rpc1.png" alt=""></p><p><img src="rpc2.png" alt=""></p><p>guest中利用frida框架注入到vmtools.exe中使用RpcChannel_SendOneRaw发送消息</p><p><img src="rpc3.png" alt=""></p><p><img src="rpc4.png" alt=""></p><pre><code data-origin="<pre><code>gboolean
+RpcChannel_SendOneRaw(const char *data,
+                      size_t dataLen,
+                      char **result,
+                      size_t *resultLen);
+</code></pre>">gboolean
+RpcChannel_SendOneRaw(const char *data,
+                      size_t dataLen,
+                      char **result,
+                      size_t *resultLen);
+</code></pre><p>RpcChannel_SendOneRaw调用路径：<br>RpcChannel_SendOneRaw -&gt; RpcChannel_Send -&gt; BkdoorChannelSend -&gt; RpcOut_send -&gt; Message_Send -&gt; Backdoor -&gt; in特权指令</p><p>RpcChannel_SendOneRaw的参数 const char *data就是给Host发送的指令， 在第3小节会讲host是怎么接收guest 的命令。</p><p><strong><em> 2. 漏洞 </em></strong></p><p>Dnd/CP的Version 4的dnd/cp分片数据包校验函数</p><pre><code data-origin="<pre><code>static Bool
+DnDCPMsgV4IsPacketValid(const uint8 *packet,
+                        size_t packetSize)
+{
+   DnDCPMsgHdrV4 *msgHdr = NULL;
+   ASSERT(packet);
+
+   if (packetSize &amp;lt; DND_CP_MSG_HEADERSIZE_V4) {
+      return FALSE;
+   }
+
+   msgHdr = (DnDCPMsgHdrV4 *)packet;
+
+   /* Payload size is not valid. */
+   if (msgHdr-&amp;gt;payloadSize &amp;gt; DND_CP_PACKET_MAX_PAYLOAD_SIZE_V4) {
+      return FALSE;
+   }
+
+   /* Binary size is not valid. */
+   if (msgHdr-&amp;gt;binarySize &amp;gt; DND_CP_MSG_MAX_BINARY_SIZE_V4) {
+      return FALSE;
+   }
+
+   /* Payload size is more than binary size. */
+   if (msgHdr-&amp;gt;payloadOffset + msgHdr-&amp;gt;payloadSize &amp;gt; msgHdr-&amp;gt;binarySize) {//[1]
+      return FALSE;
+   }
+
+   return TRUE;
+}
+
+Bool
+DnDCPMsgV4_UnserializeMultiple(DnDCPMsgV4 *msg,
+                               const uint8 *packet,
+                               size_t packetSize)
+{
+   DnDCPMsgHdrV4 *msgHdr = NULL;
+   ASSERT(msg);
+   ASSERT(packet);
+
+   if (!DnDCPMsgV4IsPacketValid(packet, packetSize)) {
+      return FALSE;
+   }
+
+   msgHdr = (DnDCPMsgHdrV4 *)packet;
+
+   /*
+    * For each session, there is at most 1 big message. If the received
+    * sessionId is different with buffered one, the received packet is for
+    * another another new message. Destroy old buffered message.
+    */
+   if (msg-&amp;gt;binary &amp;amp;&amp;amp;
+       msg-&amp;gt;hdr.sessionId != msgHdr-&amp;gt;sessionId) {
+      DnDCPMsgV4_Destroy(msg);
+   }
+
+   /* Offset should be 0 for new message. */
+   if (NULL == msg-&amp;gt;binary &amp;amp;&amp;amp; msgHdr-&amp;gt;payloadOffset != 0) {
+      return FALSE;
+   }
+
+   /* For existing buffered message, the payload offset should match. */
+   if (msg-&amp;gt;binary &amp;amp;&amp;amp;
+       msg-&amp;gt;hdr.sessionId == msgHdr-&amp;gt;sessionId &amp;amp;&amp;amp;
+       msg-&amp;gt;hdr.payloadOffset != msgHdr-&amp;gt;payloadOffset) {
+      return FALSE;
+   }
+
+   if (NULL == msg-&amp;gt;binary) {
+      memcpy(msg, msgHdr, DND_CP_MSG_HEADERSIZE_V4);
+      msg-&amp;gt;binary = Util_SafeMalloc(msg-&amp;gt;hdr.binarySize);
+   }
+
+   /* msg-&amp;gt;hdr.payloadOffset is used as received binary size. */
+   memcpy(msg-&amp;gt;binary + msg-&amp;gt;hdr.payloadOffset, //[2]
+          packet + DND_CP_MSG_HEADERSIZE_V4,
+          msgHdr-&amp;gt;payloadSize);
+   msg-&amp;gt;hdr.payloadOffset += msgHdr-&amp;gt;payloadSize;
+   return TRUE;
+}
+</code></pre>">static Bool
+DnDCPMsgV4IsPacketValid(const uint8 *packet,
+                        size_t packetSize)
+{
+   DnDCPMsgHdrV4 *msgHdr = NULL;
+   ASSERT(packet);
+
+   if (packetSize &lt; DND_CP_MSG_HEADERSIZE_V4) {
+      return FALSE;
+   }
+
+   msgHdr = (DnDCPMsgHdrV4 *)packet;
+
+   /* Payload size is not valid. */
+   if (msgHdr-&gt;payloadSize &gt; DND_CP_PACKET_MAX_PAYLOAD_SIZE_V4) {
+      return FALSE;
+   }
+
+   /* Binary size is not valid. */
+   if (msgHdr-&gt;binarySize &gt; DND_CP_MSG_MAX_BINARY_SIZE_V4) {
+      return FALSE;
+   }
+
+   /* Payload size is more than binary size. */
+   if (msgHdr-&gt;payloadOffset + msgHdr-&gt;payloadSize &gt; msgHdr-&gt;binarySize) {//[1]
+      return FALSE;
+   }
+
+   return TRUE;
+}
+
+Bool
+DnDCPMsgV4_UnserializeMultiple(DnDCPMsgV4 *msg,
+                               const uint8 *packet,
+                               size_t packetSize)
+{
+   DnDCPMsgHdrV4 *msgHdr = NULL;
+   ASSERT(msg);
+   ASSERT(packet);
+
+   if (!DnDCPMsgV4IsPacketValid(packet, packetSize)) {
+      return FALSE;
+   }
+
+   msgHdr = (DnDCPMsgHdrV4 *)packet;
+
+   /*
+    * For each session, there is at most 1 big message. If the received
+    * sessionId is different with buffered one, the received packet is for
+    * another another new message. Destroy old buffered message.
+    */
+   if (msg-&gt;binary &amp;&amp;
+       msg-&gt;hdr.sessionId != msgHdr-&gt;sessionId) {
+      DnDCPMsgV4_Destroy(msg);
+   }
+
+   /* Offset should be 0 for new message. */
+   if (NULL == msg-&gt;binary &amp;&amp; msgHdr-&gt;payloadOffset != 0) {
+      return FALSE;
+   }
+
+   /* For existing buffered message, the payload offset should match. */
+   if (msg-&gt;binary &amp;&amp;
+       msg-&gt;hdr.sessionId == msgHdr-&gt;sessionId &amp;&amp;
+       msg-&gt;hdr.payloadOffset != msgHdr-&gt;payloadOffset) {
+      return FALSE;
+   }
+
+   if (NULL == msg-&gt;binary) {
+      memcpy(msg, msgHdr, DND_CP_MSG_HEADERSIZE_V4);
+      msg-&gt;binary = Util_SafeMalloc(msg-&gt;hdr.binarySize);
+   }
+
+   /* msg-&gt;hdr.payloadOffset is used as received binary size. */
+   memcpy(msg-&gt;binary + msg-&gt;hdr.payloadOffset, //[2]
+          packet + DND_CP_MSG_HEADERSIZE_V4,
+          msgHdr-&gt;payloadSize);
+   msg-&gt;hdr.payloadOffset += msgHdr-&gt;payloadSize;
+   return TRUE;
+}
+</code></pre><p>open-vm-tools中的代码在此：<a href="https://github.com/vmware/open-vm-tools/blob/master/open-vm-tools/services/plugins/dndcp/dnd/dndCPMsgV4.c">dndCPMsgV4.c</a></p><p>对于Dnd/CP version 4的功能中，当guest发送分片Dnd/CP命令数据包时，会调用DnDCPMsgV4_UnserializeMultiple函数进行分片重组，重组的时候 DnDCPMsgV4IsPacketValid函数中的[1]处代码校验不严格，会导致[2]处堆溢出，可以构造如下的数据包来触发漏洞</p><pre><code data-origin="<pre><code>packet 1 {
+    sessionId : 0x41414141
+    binarySize： 0x100
+    payloadOffset: 0
+    payloadSize : 0x50
+    ...
+    //0x50 bytes binary
+}
+发送packet 1时，DnDCPMsgV4IsPacketValid函数的校验的不会有问题
+
+packet 2 {
+    sessionId : 0x41414141
+    binarySize： 0x1000
+    payloadOffset: 0x50
+    payloadSize : 0x100
+    ...
+    //0x100 bytes binary
+}
+在发送后续的分片包时，DnDCPMsgV4IsPacketValid的校验就已经无效了，可以指定更大的binarySize来绕过校验
+</code></pre>">packet 1 {
+    sessionId : 0x41414141
+    binarySize： 0x100
+    payloadOffset: 0
+    payloadSize : 0x50
+    ...
+    //0x50 bytes binary
+}
+发送packet 1时，DnDCPMsgV4IsPacketValid函数的校验的不会有问题
+
+packet 2 {
+    sessionId : 0x41414141
+    binarySize： 0x1000
+    payloadOffset: 0x50
+    payloadSize : 0x100
+    ...
+    //0x100 bytes binary
+}
+在发送后续的分片包时，DnDCPMsgV4IsPacketValid的校验就已经无效了，可以指定更大的binarySize来绕过校验
+</code></pre><p>Dnd/CP的Version 3的dnd分片数据包校验函数</p><pre><code data-origin="<pre><code>Bool
+DnD_TransportBufAppendPacket(DnDTransportBuffer *buf,          // IN/OUT
+                             DnDTransportPacketHeader *packet, // IN
+                             size_t packetSize)                // IN
+{
+   ASSERT(buf);
+   ASSERT(packetSize == (packet-&amp;gt;payloadSize + DND_TRANSPORT_PACKET_HEADER_SIZE) &amp;amp;&amp;amp;
+          packetSize &amp;lt;= DND_MAX_TRANSPORT_PACKET_SIZE &amp;amp;&amp;amp;
+          (packet-&amp;gt;payloadSize + packet-&amp;gt;offset) &amp;lt;= packet-&amp;gt;totalSize &amp;amp;&amp;amp;
+          packet-&amp;gt;totalSize &amp;lt;= DNDMSG_MAX_ARGSZ);
+
+   if (packetSize != (packet-&amp;gt;payloadSize + DND_TRANSPORT_PACKET_HEADER_SIZE) ||
+       packetSize &amp;gt; DND_MAX_TRANSPORT_PACKET_SIZE ||
+       (packet-&amp;gt;payloadSize + packet-&amp;gt;offset) &amp;gt; packet-&amp;gt;totalSize || //[3]
+       packet-&amp;gt;totalSize &amp;gt; DNDMSG_MAX_ARGSZ) {
+      goto error;
+   }
+
+   /*
+    * If seqNum does not match, it means either this is the first packet, or there
+    * is a timeout in another side. Reset the buffer in all cases.
+    */
+   if (buf-&amp;gt;seqNum != packet-&amp;gt;seqNum) {
+      DnD_TransportBufReset(buf);
+   }
+
+   if (!buf-&amp;gt;buffer) {
+      ASSERT(!packet-&amp;gt;offset);
+      if (packet-&amp;gt;offset) {
+         goto error;
+      }
+      buf-&amp;gt;buffer = Util_SafeMalloc(packet-&amp;gt;totalSize);
+      buf-&amp;gt;totalSize = packet-&amp;gt;totalSize;
+      buf-&amp;gt;seqNum = packet-&amp;gt;seqNum;
+      buf-&amp;gt;offset = 0;
+   }
+
+   if (buf-&amp;gt;offset != packet-&amp;gt;offset) {
+      goto error;
+   }
+
+   memcpy(buf-&amp;gt;buffer + buf-&amp;gt;offset,
+          packet-&amp;gt;payload,
+          packet-&amp;gt;payloadSize);
+   buf-&amp;gt;offset += packet-&amp;gt;payloadSize;
+   return TRUE;
+
+error:
+   DnD_TransportBufReset(buf);
+   return FALSE;
+}
+</code></pre>">Bool
+DnD_TransportBufAppendPacket(DnDTransportBuffer *buf,          // IN/OUT
+                             DnDTransportPacketHeader *packet, // IN
+                             size_t packetSize)                // IN
+{
+   ASSERT(buf);
+   ASSERT(packetSize == (packet-&gt;payloadSize + DND_TRANSPORT_PACKET_HEADER_SIZE) &amp;&amp;
+          packetSize &lt;= DND_MAX_TRANSPORT_PACKET_SIZE &amp;&amp;
+          (packet-&gt;payloadSize + packet-&gt;offset) &lt;= packet-&gt;totalSize &amp;&amp;
+          packet-&gt;totalSize &lt;= DNDMSG_MAX_ARGSZ);
+
+   if (packetSize != (packet-&gt;payloadSize + DND_TRANSPORT_PACKET_HEADER_SIZE) ||
+       packetSize &gt; DND_MAX_TRANSPORT_PACKET_SIZE ||
+       (packet-&gt;payloadSize + packet-&gt;offset) &gt; packet-&gt;totalSize || //[3]
+       packet-&gt;totalSize &gt; DNDMSG_MAX_ARGSZ) {
+      goto error;
+   }
+
+   /*
+    * If seqNum does not match, it means either this is the first packet, or there
+    * is a timeout in another side. Reset the buffer in all cases.
+    */
+   if (buf-&gt;seqNum != packet-&gt;seqNum) {
+      DnD_TransportBufReset(buf);
+   }
+
+   if (!buf-&gt;buffer) {
+      ASSERT(!packet-&gt;offset);
+      if (packet-&gt;offset) {
+         goto error;
+      }
+      buf-&gt;buffer = Util_SafeMalloc(packet-&gt;totalSize);
+      buf-&gt;totalSize = packet-&gt;totalSize;
+      buf-&gt;seqNum = packet-&gt;seqNum;
+      buf-&gt;offset = 0;
+   }
+
+   if (buf-&gt;offset != packet-&gt;offset) {
+      goto error;
+   }
+
+   memcpy(buf-&gt;buffer + buf-&gt;offset,
+          packet-&gt;payload,
+          packet-&gt;payloadSize);
+   buf-&gt;offset += packet-&gt;payloadSize;
+   return TRUE;
+
+error:
+   DnD_TransportBufReset(buf);
+   return FALSE;
+}
+</code></pre><p>open-vm-tools中的代码在此：<a href="https://github.com/vmware/open-vm-tools/blob/master/open-vm-tools/services/plugins/dndcp/dnd/dndCommon.c#L722">dndCommon.c</a></p><p>对于老版本Version 3的Dnd/CP的功能中，在[3]处同样对分片重组的包有着校验失效的问题，可以发送如下的数据包来触发溢出。</p><pre><code data-origin="<pre><code>packet 1 {
+    seqNum: 0x41414141
+    totalSize： 0x100
+    payloadSize : 0x50
+    offset: 0
+    ...
+    //0x50 bytes buffer
+}
+发送packet 1时，DnD_TransportBufAppendPacket函数中[3]处不会有问题，
+
+packet 2 {
+    seqNum : 0x41414141
+    totalSize： 0x1000
+    payloadSize : 0x100
+    offset: 0x50
+    ...
+    //0x100 bytes buffer
+}
+在发送后续的分片包时，DnD_TransportBufAppendPacke的校验就已经无效了，可以指定更大的totalSize来绕过校验
+</code></pre>">packet 1 {
+    seqNum: 0x41414141
+    totalSize： 0x100
+    payloadSize : 0x50
+    offset: 0
+    ...
+    //0x50 bytes buffer
+}
+发送packet 1时，DnD_TransportBufAppendPacket函数中[3]处不会有问题，
+
+packet 2 {
+    seqNum : 0x41414141
+    totalSize： 0x1000
+    payloadSize : 0x100
+    offset: 0x50
+    ...
+    //0x100 bytes buffer
+}
+在发送后续的分片包时，DnD_TransportBufAppendPacke的校验就已经无效了，可以指定更大的totalSize来绕过校验
+</code></pre><p><strong><em> 3. 漏洞原理 </em></strong></p><p>第2节看完open-vm-tools中漏洞溢出的地方，现在来看vmware-vmx.exe中怎么利用漏洞实现逃逸。</p><p><img src="vmware-vmx1.png" alt=""><br>bind_function会把RPCI通信的命令和函数绑定到一个函数指针数组里面。<br>bind_function第3个参数是命令的名字，第4个参数是对应处理的回调函数。<br>回调函数的定义如下：<br>char <strong>fastcall handler(</strong>int64 a1, __int64 a2, const char <em> request, int requestlen, const char **result, _DWORD </em>resultlen);</p><p>handler第三个参数是接收的命令， 第5个参数是回复给guest的数据。</p><p>发送如下命令可以设置和查询dnd/cp的版本</p><pre><code data-origin="<pre><code>tools.capability.dnd_version 3            //设置dnd的版本为3
+tools.capability.copypaste_version 3    //设置cp的版本为3
+vmx.capability.dnd_version                //查询dnd的版本
+vmx.capability.copypaste_version        //查询cp的版本
+</code></pre>">tools.capability.dnd_version 3            //设置dnd的版本为3
+tools.capability.copypaste_version 3    //设置cp的版本为3
+vmx.capability.dnd_version                //查询dnd的版本
+vmx.capability.copypaste_version        //查询cp的版本
+</code></pre><p>讲完host如何接收guest的命令后，来看看guest的堆溢出怎么触发host的逃逸</p><p><img src="vmware-vmx2.png" alt=""><br>在处理guest的”tools.capability.dnd_version 3”命令时，设置当前的dnd_version<br><img src="vmware-vmx3.png" alt=""><br>在处理guest的”vmx.capability.dnd_version”命令时，会获取当前的dnd_version，并且更新dnd/cp全局对象<br><img src="vmware-vmx4.png" alt=""><br>在Update_DndCP_Object函数中delete掉前一个版本的obj_CP和obj_Dnd， 析构对象的时候都会调用到他们各自的虚函数，只需要溢出到虚表上就能执行漏洞代码。<br><img src="vmware-vmx5.png" alt=""><br><img src="vmware-vmx6.png" alt=""><br>能够执行代码的路径很多，可以溢出Dnd，也可以溢出CP, 只需要选择溢出其中一个虚函数。</p><h4 id="0x04-绕过aslr"><a name="0x04-绕过aslr" href="#0x04-绕过aslr"></a>0x04 绕过ASLR</h4><p>要想在guest中获取host的对象，就需要有个能够泄漏信息的地方，例如guest中发送info-set和info-get命令。</p><pre><code data-origin="<pre><code>info-set guestinfo.KEY VALUE  //设置key/value键值对
+info-get guestinfo.KEY          //获取key的值
+</code></pre>">info-set guestinfo.KEY VALUE  //设置key/value键值对
+info-get guestinfo.KEY          //获取key的值
+</code></pre><p><img src="aslr1.png" alt=""><br><img src="aslr3.png" alt=""><br>利用info-set覆盖字符串的结尾NULL字符，让value字符串与后面的内存块连接起来，然后在info-get中读取Key，就能获取到value字符串后面的内存，达到信息泄漏。</p><h4 id="0x05-exploit分析"><a name="0x05-exploit分析" href="#0x05-exploit分析"></a>0x05 Exploit分析</h4><p>此次分析的exp是由unamer发布在github上的<a href="https://github.com/unamer/vmware_escape">vmware_escape</a>项目。</p><p><strong><em> 1. 设置DnD/CP版本</em></strong><br><img src="exp1.png" alt=""></p><p><strong><em> 2. 绕过ASLR</em></strong><br>多次发送info-set, info-get，进行堆溢出<br><img src="exp2.png" alt=""><br><img src="exp3.png" alt=""><br><img src="exp4.png" alt=""><br><img src="exp5.png" alt=""></p><p>获取泄漏的信息，绕过ASLR<br><img src="exp6.png" alt=""></p><p><strong><em> 3. 实现代码执行 </em></strong><br>通过泄漏的信息，判断是指针是Dnd对象还是CP对象，然后设置不同的rop<br><img src="exp7.png" alt=""><br><img src="exp8.png" alt=""></p><p><strong><em> 4. 逃逸效果 </em></strong><br><img src="vm.gif" alt=""><br>由于Windows 的LEH堆随机化特性，使得exp的不稳定，没有逃逸成功的时候，会引起vmware-vmx.exe进程崩溃。</p>
+
+<footer style="position:fixed; font-size:.8em; text-align:right; bottom:0px; margin-left:-25px; height:20px; width:100%;">generated by <a href="http://pad.haroopress.com" target="_blank">haroopad</a></footer>
+</body>
+</html>

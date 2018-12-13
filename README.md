@@ -8,7 +8,7 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 
 |date|log|
 |:-:|:-|
-|2018-12-13|增加子目录：frida高级应用：FRIDA检测方法汇总|
+|2018-12-13|增加子目录：frida高级应用：FRIDA检测方法汇总|
 |2018-12-13|Imyang大佬发布[CVE-2017-4901 VMware虚拟机逃逸漏洞分析【Frida Windows实例】](https://bbs.pediy.com/thread-248384.htm)，安排在【frida高级应用：综合攻防】小节|
 |2018-12-11|完成[`03.基本案例上手/3.5 Android`](https://www.freebuf.com/articles/system/190565.html)部分，讲解了`FRIDA`的hook参数、修改结果、远程调用、动态修改等功能|
 |2018-12-08|完成[`01.多平台环境安装/1.3.Android-iOS.md`](https://bbs.pediy.com/thread-248293.htm)文章中的安卓部分，安卓版本为`8.1`|
@@ -82,7 +82,7 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 ### 5.11 脱壳去保护
 ### 5.12 各种检测bypass
 ### 5.13 反调试与反反调试
-### 5.14 FRIDA检测方法汇总
+### 5.14 FRIDA检测方法汇总
 ### 5.15 综合攻防（一）
 ### 5.16 [综合攻防（二）:CVE-2017-4901 VMware虚拟机逃逸漏洞分析【Frida Windows实例】](https://bbs.pediy.com/thread-248384.htm)
 ### 5.17 综合攻防（三）
