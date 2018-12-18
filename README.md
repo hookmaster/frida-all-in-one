@@ -8,6 +8,7 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 
 |date|log|
 |:-:|:-|
+|2018-12-18|开始写安卓脚本系列[`4.2 FRIDA脚本系列（一）入门篇：在安卓8.1上dump蓝牙接口和实例`](https://www.anquanke.com/post/id/168152)|
 |2018-12-13|增加子目录：frida高级应用：FRIDA检测方法汇总|
 |2018-12-13|Imyang大佬发布[CVE-2017-4901 VMware虚拟机逃逸漏洞分析【Frida Windows实例】](https://bbs.pediy.com/thread-248384.htm)，安排在【frida高级应用：综合攻防】小节|
 |2018-12-11|完成[`03.基本案例上手/3.5 Android`](https://www.freebuf.com/articles/system/190565.html)部分，讲解了`FRIDA`的hook参数、修改结果、远程调用、动态修改等功能|
@@ -50,7 +51,7 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 
 ## 第4章. frida-scripts
 ### 4.1 iOS篇
-### 4.2 Android篇
+### 4.2 [Android篇](https://www.anquanke.com/post/id/168152)（安卓8.1）
 #### 4.2.1 frida_android_trace.js. Full-featured Java and Module tracer for Android.
 #### 4.2.2 frida_android_enum.js. Collection of functions to enumerate Java classes and methods.
 #### 4.2.3 Enumerate loaded classes
