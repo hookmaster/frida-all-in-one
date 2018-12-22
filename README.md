@@ -8,6 +8,7 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 
 |date|log|
 |:-:|:-|
+|2018-12-22|葫芦娃将在[`SRC白帽子技术沙龙`](https://www.anquanke.com/post/id/168166)发表“ 跨平台Hook之Frida”主题演讲，海报在[这里](tmp/20181218poster.png)，想要面基的盆友不要错过！|
 |2018-12-18|开始写安卓脚本系列[`4.2 FRIDA脚本系列（一）入门篇：在安卓8.1上dump蓝牙接口和实例`](https://www.anquanke.com/post/id/168152)|
 |2018-12-13|增加子目录：frida高级应用：FRIDA检测方法汇总|
 |2018-12-13|Imyang大佬发布[CVE-2017-4901 VMware虚拟机逃逸漏洞分析【Frida Windows实例】](https://bbs.pediy.com/thread-248384.htm)，安排在【frida高级应用：综合攻防】小节|
