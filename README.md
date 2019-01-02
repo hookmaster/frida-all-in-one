@@ -8,6 +8,7 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 
 |date|log|
 |:-:|:-|
+|2019-1-2|葫芦娃葫芦娃针对frida的分享：[The King Of Hooking Tools.pptx](https://t.zsxq.com/Q3ZJAQn)|
 |2018-12-22|葫芦娃将在[`SRC白帽子技术沙龙`](https://www.anquanke.com/post/id/168166)发表“ 跨平台Hook之Frida”主题演讲，海报在[这里](tmp/20181218poster.png)，想要面基的盆友不要错过！|
 |2018-12-18|开始写安卓脚本系列[`4.2 FRIDA脚本系列（一）入门篇：在安卓8.1上dump蓝牙接口和实例`](https://www.anquanke.com/post/id/168152)|
 |2018-12-13|增加子目录：frida高级应用：FRIDA检测方法汇总|
