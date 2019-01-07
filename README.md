@@ -51,13 +51,13 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 #### 3.5.2 高级能力：互联互通、动态修改
 ### 3.6 JavaScript
 
-## 第4章. frida-scripts
+## 第4章. FRIDA SCRIPT
 ### 4.1 iOS篇
-### 4.2 [Android篇](https://www.anquanke.com/post/id/168152)（安卓8.1）
-#### 4.2.1 frida_android_trace.js. Full-featured Java and Module tracer for Android.
-#### 4.2.2 frida_android_enum.js. Collection of functions to enumerate Java classes and methods.
-#### 4.2.3 Enumerate loaded classes
-#### 4.2.4 Class description
+### 4.2 Android篇（安卓8.1）
+#### 4.2.1 [FRIDA SCRIPT的"hello world"](https://www.anquanke.com/post/id/168152#h2-1)
+#### 4.2.2 [枚举所有的类并定位类](https://www.anquanke.com/post/id/168152#h2-2)
+#### 4.2.3 [枚举类的所有方法并定位方法](https://www.anquanke.com/post/id/168152#h2-4)
+#### 4.2.4 [案例一：综合案例：在安卓8.1上dump蓝牙接口和实例](https://www.anquanke.com/post/id/168152#h2-5)
 #### 4.2.5 Hook io InputStream
 #### 4.2.6 Android make Toast
 #### 4.2.7 Await for specific module to load
