@@ -67,6 +67,7 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 #### 4.2.12 Hook Java reflection
 #### 4.2.13 Trace class
 #### 4.2.14 SSL pinning bypass
+#### 其他脚本一：[介召几个frida在安卓逆向中使用的脚本以及延时Hook手法](https://bbs.pediy.com/thread-248848.htm)
 ...
 ...
 
