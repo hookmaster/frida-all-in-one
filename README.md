@@ -67,7 +67,7 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 #### 4.2.5 Hook io InputStream
 #### 4.2.6 Android make Toast
 #### 4.2.7 Await for specific module to load
-#### 4.2.8 Print all runtime strings & stacktrace
+#### 4.2.8 [Print stacktrace](https://github.com/hookmaster/frida-all-in-one/tree/master/sample/PrintStacktrace)
 #### 4.2.9 String comparison
 #### 4.2.10 Hook JNI by address
 #### 4.2.11 Hook constructor
