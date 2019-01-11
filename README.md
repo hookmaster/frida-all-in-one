@@ -58,6 +58,11 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 #### 4.2.2 [枚举所有的类并定位类](https://www.anquanke.com/post/id/168152#h2-2)
 #### 4.2.3 [枚举类的所有方法并定位方法](https://www.anquanke.com/post/id/168152#h2-4)
 #### 4.2.4 [案例一：综合案例：在安卓8.1上dump蓝牙接口和实例](https://www.anquanke.com/post/id/168152#h2-5)
+#### 4.2.5 [hook方法的所有重载](https://www.anquanke.com/post/id/169315#h2-0)
+#### 4.2.6 [hook类的所有方法](https://www.anquanke.com/post/id/169315#h2-1)
+#### 4.2.7 [hook类的所有子类](https://www.anquanke.com/post/id/169315#h2-2)
+#### 4.2.8 [hook本地库的导出函数](https://www.anquanke.com/post/id/169315#h2-3)
+#### 4.2.9 [案例二：综合案例：动静态结合逆向WhatsApp](https://www.anquanke.com/post/id/169315#h2-4)
 #### 4.2.5 Hook io InputStream
 #### 4.2.6 Android make Toast
 #### 4.2.7 Await for specific module to load
