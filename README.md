@@ -8,7 +8,7 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 
 |date|log|
 |:-:|:-|
-|2019-3-29|[`4.4 FRIDA脚本系列（四）更新篇：几个主要机制的大更新`](https://www.anquanke.com/post/id/177597)|
+|2019-5-4|[`4.4 FRIDA脚本系列（四）更新篇：几个主要机制的大更新`](https://www.anquanke.com/post/id/177597)|
 |2019-3-29|[`4.3 FRIDA脚本系列（三）超神篇：百度AI“调教”抖音AI`](04.FRIDA-SCRIPTS)|
 |2019-1-16|[Brida操作指南](https://bbs.pediy.com/thread-248977.htm)|
 |2019-1-11|[`4.2 FRIDA脚本系列（二）成长篇：动静态结合逆向WhatsApp`](04.FRIDA-SCRIPTS)|
