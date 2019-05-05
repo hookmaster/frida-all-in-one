@@ -23,7 +23,8 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 |2018-12-05|前言02：FRIDA-HOOK频道开设|
 |2018-11-24|前言01：似水流年|
 
-## 前言### [一、似水流年](https://bbs.pediy.com/thread-247957-1.htm)
+## 前言
+### [一、似水流年](https://bbs.pediy.com/thread-247957-1.htm)
 ### [二、FRIDA/HOOK频道开设](00前言02.FRIDA-HOOK频道开设/FRIDA-HOOK频道开设.md)
 
 ## [第1章. 多平台环境安装](01.多平台环境安装)
