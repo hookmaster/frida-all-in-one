@@ -8,12 +8,13 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 
 |date|log|
 |:-:|:-|
-|2019-3-29|[`4.3 FRIDA脚本系列（三）超神篇：百度AI“调教”抖音AI](https://www.anquanke.com/post/id/175621)|
+|2019-3-29|[`4.4 FRIDA脚本系列（四）更新篇：几个主要机制的大更新`](https://www.anquanke.com/post/id/177597)|
+|2019-3-29|[`4.3 FRIDA脚本系列（三）超神篇：百度AI“调教”抖音AI`](04.FRIDA-SCRIPTS)|
 |2019-1-16|[Brida操作指南](https://bbs.pediy.com/thread-248977.htm)|
-|2019-1-11|[`4.2 FRIDA脚本系列（二）成长篇：动静态结合逆向WhatsApp`](https://www.anquanke.com/post/id/169315)|
+|2019-1-11|[`4.2 FRIDA脚本系列（二）成长篇：动静态结合逆向WhatsApp`](04.FRIDA-SCRIPTS)|
 |2019-1-9|FRIDA脚本系列其他脚本一：[介召几个frida在安卓逆向中使用的脚本以及延时Hook手法](https://bbs.pediy.com/thread-248848.htm)|
 |2019-1-2|在SRC白帽沙龙上的frida分享：[The King Of Hooking Tools.pptx](https://github.com/hookmaster/frida-all-in-one/blob/master/FridaPPT/The%20King%20Of%20Hooking%20Tools.pptx)|
-|2018-12-18|开始写安卓脚本系列[`4.2 FRIDA脚本系列（一）入门篇：在安卓8.1上dump蓝牙接口和实例`](https://www.anquanke.com/post/id/168152)|
+|2018-12-18|开始写安卓脚本系列[`4.2 FRIDA脚本系列（一）入门篇：在安卓8.1上dump蓝牙接口和实例`](04.FRIDA-SCRIPTS)|
 |2018-12-13|增加子目录：frida高级应用：FRIDA检测方法汇总|
 |2018-12-13|Imyang大佬发布[CVE-2017-4901 VMware虚拟机逃逸漏洞分析【Frida Windows实例】](https://bbs.pediy.com/thread-248384.htm)，安排在【frida高级应用：综合攻防】小节|
 |2018-12-11|完成[`03.基本案例上手/3.5 Android`](https://www.freebuf.com/articles/system/190565.html)部分，讲解了`FRIDA`的hook参数、修改结果、远程调用、动态修改等功能|
@@ -22,9 +23,7 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 |2018-12-05|前言02：FRIDA-HOOK频道开设|
 |2018-11-24|前言01：似水流年|
 
-## 前言
-
-### [一、似水流年](https://bbs.pediy.com/thread-247957-1.htm)
+## 前言### [一、似水流年](https://bbs.pediy.com/thread-247957-1.htm)
 ### [二、FRIDA/HOOK频道开设](00前言02.FRIDA-HOOK频道开设/FRIDA-HOOK频道开设.md)
 
 ## [第1章. 多平台环境安装](01.多平台环境安装)
