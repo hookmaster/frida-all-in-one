@@ -24,10 +24,8 @@ Java.perform(function(){
     Java.choose(MainActivity, {
 	onMatch: function(obj){
 	    console.log('onMatch');
-	    if(!flag){
-		obj.runOnUiThread(ToastRunnable.$new())
-		flag = true;
-	    }
+	    obj.runOnUiThread(ToastRunnable.$new())
+	    return 'stop';
 	},
 	onComplete: function(){console.log("onComplete")}
     })
