@@ -45,6 +45,7 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 
 ## 第3章. 基本案例上手
 ### 3.1 Windows
+#### 3.1.1[CVE-2017-4901 VMware虚拟机逃逸漏洞分析【Frida Windows实例】](https://bbs.pediy.com/thread-248384.htm)
 ### 3.2 macOS
 ### 3.3 Linux
 ### 3.4 iOS
@@ -95,9 +96,6 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 ### 5.12 各种检测bypass
 ### 5.13 反调试与反反调试
 ### 5.14 FRIDA检测方法汇总
-### 5.15 综合攻防（一）
-### 5.16 [综合攻防（二）:CVE-2017-4901 VMware虚拟机逃逸漏洞分析【Frida Windows实例】](https://bbs.pediy.com/thread-248384.htm)
-### 5.17 综合攻防（三）
 
 ## 第6章. hook技巧总结（Java、C/C++、ObjC、JS）
 ### 6.1 C/C++
