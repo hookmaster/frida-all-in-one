@@ -67,7 +67,7 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 #### 4.2.8 [hook本地库的导出函数](https://www.anquanke.com/post/id/169315#h2-3)
 #### 4.2.9 [案例二：综合案例：动静态结合逆向WhatsApp](https://www.anquanke.com/post/id/169315#h2-4)
 #### 4.2.5 Hook io InputStream
-#### 4.2.6 Android make Toast
+#### 4.2.6 [Android make Toast](https://github.com/hookmaster/frida-all-in-one/tree/master/sample/MakeToast)
 #### 4.2.7 Await for specific module to load
 #### 4.2.8 [Print stacktrace](https://github.com/hookmaster/frida-all-in-one/tree/master/sample/PrintStacktrace)
 #### 4.2.9 String comparison
