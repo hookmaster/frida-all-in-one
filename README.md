@@ -50,7 +50,7 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 ### 3.3 Linux
 ### 3.4 iOS
 ### 3.5 [Android]
-#### 3.5.1 
+#### 3.5.1 [一篇文章带你领悟Frida的精髓（基于安卓8.1）](https://www.freebuf.com/articles/system/190565.html)
 #### 3.5.2 [基本能力：hook参数、修改结果](https://github.com/hookmaster/frida-all-in-one#42-android%E7%AF%87%E5%AE%89%E5%8D%9381)
 #### 3.5.3 中级能力：远程调用RPC
 #### 3.5.4 [高级能力：互联互通、动态修改(Dwarf调试器)](https://github.com/iGio90/Dwarf)
