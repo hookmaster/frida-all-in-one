@@ -70,12 +70,12 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 #### 4.2.6 [Android make Toast](https://github.com/hookmaster/frida-all-in-one/tree/master/sample/MakeToast)
 #### 4.2.7 Await for specific module to load
 #### 4.2.8 [Print stacktrace](https://github.com/hookmaster/frida-all-in-one/tree/master/sample/PrintStacktrace)
-#### 4.2.9 String comparison
-#### 4.2.10 Hook JNI by address
-#### 4.2.11 Hook constructor
+#### 4.2.9 [String comparison(Only working in dvm)](https://codeshare.frida.re/@dzonerzy/stringcompare/)
+#### 4.2.10 [Hook JNI](https://github.com/chame1eon/jnitrace)
+#### 4.2.11 [Hook constructor](https://github.com/hookmaster/frida-all-in-one/blob/master/sample/HookConstructor/sample.js)
 #### 4.2.12 Hook Java reflection
 #### 4.2.13 Trace class
-#### 4.2.14 SSL pinning bypass
+#### 4.2.14 [SSL pinning bypass](https://codeshare.frida.re/@pcipolloni/universal-android-ssl-pinning-bypass-with-frida/)
 #### 其他脚本一：[介召几个frida在安卓逆向中使用的脚本以及延时Hook手法](https://bbs.pediy.com/thread-248848.htm)
 ...
 ...
