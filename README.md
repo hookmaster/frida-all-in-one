@@ -45,15 +45,15 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 
 ## 第3章. 基本案例上手
 ### 3.1 Windows
-#### 3.1.1[CVE-2017-4901 VMware虚拟机逃逸漏洞分析【Frida Windows实例】](https://bbs.pediy.com/thread-248384.htm)
+#### 3.1.1 [CVE-2017-4901 VMware虚拟机逃逸漏洞分析【Frida Windows实例】](https://bbs.pediy.com/thread-248384.htm)
 ### 3.2 macOS
 ### 3.3 Linux
 ### 3.4 iOS
-### 3.5 [Android](https://www.freebuf.com/articles/system/190565.html)
-#### 3.5.1 基本能力：hook参数、修改结果
-#### 3.5.2 中级能力：远程调用RPC
-#### 3.5.2 高级能力：互联互通、动态修改
-### 3.6 JavaScript
+### 3.5 [Android]
+#### 3.5.1 
+#### 3.5.2 [基本能力：hook参数、修改结果](https://github.com/hookmaster/frida-all-in-one#42-android%E7%AF%87%E5%AE%89%E5%8D%9381)
+#### 3.5.3 中级能力：远程调用RPC
+#### 3.5.4 [高级能力：互联互通、动态修改(Dwarf调试器)](https://github.com/iGio90/Dwarf)
 
 ## 第4章. FRIDA SCRIPT
 ### 4.1 iOS篇
@@ -64,7 +64,7 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 #### 4.2.4 [案例一：综合案例：在安卓8.1上dump蓝牙接口和实例](https://www.anquanke.com/post/id/168152#h2-5)
 #### 4.2.5 [hook方法的所有重载](https://www.anquanke.com/post/id/169315#h2-0)
 #### 4.2.6 [hook类的所有方法](https://www.anquanke.com/post/id/169315#h2-1)
-#### 4.2.7 [hook类的所有子类](https://www.anquanke.com/post/id/169315#h2-2)
+#### 4.2.7 [hook包下的所有类](https://www.anquanke.com/post/id/169315#h2-2)
 #### 4.2.8 [hook本地库的导出函数](https://www.anquanke.com/post/id/169315#h2-3)
 #### 4.2.9 [案例二：综合案例：动静态结合逆向WhatsApp](https://www.anquanke.com/post/id/169315#h2-4)
 #### 4.2.5 Hook io InputStream
@@ -75,7 +75,7 @@ PS2：所有讨论、更新、源码以及部分付费内容尽在【hook老法�
 #### 4.2.10 [Hook JNI](https://github.com/chame1eon/jnitrace)
 #### 4.2.11 [Hook constructor](https://github.com/hookmaster/frida-all-in-one/blob/master/sample/HookConstructor/sample.js)
 #### 4.2.12 Hook Java reflection
-#### 4.2.13 Trace class
+#### 4.2.13 Trace class(waiting for ZenTrace to open source...)
 #### 4.2.14 [SSL pinning bypass](https://codeshare.frida.re/@pcipolloni/universal-android-ssl-pinning-bypass-with-frida/)
 #### 其他脚本一：[介召几个frida在安卓逆向中使用的脚本以及延时Hook手法](https://bbs.pediy.com/thread-248848.htm)
 ...
