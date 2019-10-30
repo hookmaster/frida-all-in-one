@@ -50,7 +50,7 @@
 ### 3.5 [Android]
 #### 3.5.1 [一篇文章带你领悟Frida的精髓（基于安卓8.1）](https://www.freebuf.com/articles/system/190565.html)
 #### 3.5.2 [基本能力：hook参数、修改结果](https://github.com/hookmaster/frida-all-in-one#42-android%E7%AF%87%E5%AE%89%E5%8D%9381)
-#### 3.5.3 中级能力：远程调用RPC
+#### 3.5.3 [中级能力：远程调用RPC](https://github.com/frida/frida-python/blob/1a90214c37b15fb2ff92bee92179b0fac15dfbe8/examples/rpc.py)
 #### 3.5.4 [高级能力：互联互通、动态修改(Dwarf调试器)](https://github.com/iGio90/Dwarf)
 
 ## 第4章. FRIDA SCRIPT
@@ -87,36 +87,28 @@
 ### 5.5 接口分析
 ### 5.6 协议分析
 ### 5.7 协议fuzz
-### 5.8 抓包解包(brida)
-### 5.9 改包重放(brida)
+### 5.8 [抓包解包(brida)](https://bbs.pediy.com/thread-248977.htm)
+### 5.9 [改包重放(brida)](https://bbs.pediy.com/thread-248977.htm)
 ### 5.10 加密解密
-### 5.11 脱壳去保护
+### 5.11 [脱壳去保护](https://github.com/4ch12dy/xadb/blob/master/script/agent.js)
 ### 5.12 各种检测bypass
 ### 5.13 反调试与反反调试
 ### 5.14 FRIDA检测方法汇总
 
-## 第6章. hook技巧总结（Java、C/C++、ObjC、JS）
-### 6.1 C/C++
+## 第6章. hook技巧总结（Java、C/C++、ObjC、...）
+### 6.1 [C/C++(CModule)](https://www.frida.re/news/2019/09/18/frida-12-7-released/)
 ### 6.2 Java
 #### 6.2.1 变量、参数、自定义参数
 #### 6.2.2 函数、隐藏函数、构造函数、重载
 #### 6.2.3 自定义类、内部类、匿名内部类、抽象类
 #### 6.2.4 ......
 ### 6.3 ObjC
-### 6.4 JS
+### 6.4 [Hook多进程](https://github.com/frida/frida-python/blob/1a90214c37b15fb2ff92bee92179b0fac15dfbe8/examples/child_gating.py)
 
-## 第7章. 二次开发基础
-### 7.1 JavaScript API：基本架构
-### 7.2 JavaScript API：数据类型
-### 7.3 JavaScript API：进程接口
-### 7.4 JavaScript API：网络接口
-### 7.5 JavaScript API：文件接口
-### 7.6 C API
-
-## 第8章. 二次开发案例
-### 8.1 Appmon
-### 8.2 brida
-### 8.3 r2frida
-### 8.4 objection
-### 8.5 ssl_logger
-### 8.6 passionfruit
+## 第7章. 二次开发案例
+### 7.1 [Appmon](https://github.com/dpnishant/appmon)
+### 7.2 [brida](https://github.com/federicodotta/Brida)
+### 7.3 [r2frida](https://github.com/nowsecure/r2frida)
+### 7.4 [objection](https://github.com/sensepost/objection)
+### 7.5 [ssl_logger](https://github.com/google/ssl_logger)
+### 7.6 [passionfruit](https://github.com/chaitin/passionfruit)
