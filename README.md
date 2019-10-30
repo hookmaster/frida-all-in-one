@@ -73,7 +73,7 @@
 #### 4.2.10 [Hook JNI](https://github.com/chame1eon/jnitrace)
 #### 4.2.11 [Hook constructor](https://github.com/hookmaster/frida-all-in-one/blob/master/sample/HookConstructor/sample.js)
 #### 4.2.12 Hook Java reflection
-#### 4.2.13 Trace class(waiting for ZenTrace to open source...)
+#### 4.2.13 [Trace class](https://github.com/hluwa/ZenTracer)
 #### 4.2.14 [SSL pinning bypass](https://codeshare.frida.re/@pcipolloni/universal-android-ssl-pinning-bypass-with-frida/)
 #### 其他脚本一：[介召几个frida在安卓逆向中使用的脚本以及延时Hook手法](https://bbs.pediy.com/thread-248848.htm)
 ...
