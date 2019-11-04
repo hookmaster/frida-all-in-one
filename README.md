@@ -86,7 +86,8 @@
 ### 5.4 流程分析
 ### 5.5 接口分析
 ### 5.6 协议分析
-### 5.7 协议fuzz
+### 5.7 Fuzz
+#### 5.7.1 [In-Process Fuzzing With Frida](https://bananamafia.dev/post/frida-fuzz/)
 ### 5.8 [抓包解包(brida)](https://bbs.pediy.com/thread-248977.htm)
 ### 5.9 [改包重放(brida)](https://bbs.pediy.com/thread-248977.htm)
 ### 5.10 加密解密
